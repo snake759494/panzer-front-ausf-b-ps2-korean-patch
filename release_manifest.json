@@ -1,0 +1,18 @@
+{
+  "tag": "v1.0",
+  "game": "Panzer Front Ausf.B (Europe)",
+  "serial": "SLES-52984",
+  "source_sha256": "f37f08210c361975432bb47d8f0601c897c4e9c6994e55cbf89767f2c7b37f55",
+  "output_sha256": "4bc20ac6882c9865d5aa634ad9a02e92b06ee54c67e17e8b5eb80b7ec90ef1cf",
+  "patch_sha256": "a89e6b07ef62e3913cdc31d685a2129cd875ca5bfc18be0362ae3a59d4730578",
+  "patch_bytes": 396142,
+  "runtime_scope": "PCSX2 boot/menus/options/tactics/mission list/briefing/battle radio/HUD/command menus/binoculars/gunsight/widescreen checked; full missions, results, supply/support detail, save/load and hardware unverified",
+  "assets": [
+    "Panzer_Front_AusfB_KO_v1.0.xdelta",
+    "SLES-52984_3F014BD7.pnach",
+    "SLES-52984_F2694B94.pnach"
+  ],
+  "widescreen_pnach_sha256": "3326227f80b6491af1a7d89870520d9c73b9ea6e834a333e2cb6f142c5b0bdf7",
+  "game_crc_original": "F2694B94",
+  "game_crc_korean": "3F014BD7"
+}

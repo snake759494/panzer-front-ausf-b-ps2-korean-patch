@@ -1,0 +1,13 @@
+*.iso
+*.ISO
+*.xdelta
+*.exe
+*.dll
+*.ttf
+*.otf
+*.bin
+*.p2s
+*.pyc
+__pycache__/
+work/
+release_repo/

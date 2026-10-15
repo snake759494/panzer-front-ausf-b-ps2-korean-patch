@@ -1,0 +1,46 @@
+gametitle=Panzer Front Ausf.B (PAL-E) (SLES-52984)
+comment=16:9 Widescreen (made for Korean patch; also works on original EUR)
+// 1) 투영 행렬(sceVu0ViewScreenMatrix 0x1106A0): 가로 배율 ax에 0.75 곱함
+// 2) 컬링 클립 행렬 가로 범위 2047 -> 2729.3 (4/3배)
+// 3) 하늘·원경 시야각 계산의 화면 반폭 256 -> 340 (4/3배)
+// PCSX2 설정: 그래픽 > 화면비 16:9
+
+gsaspectratio=16:9
+patch=1,EE,20110704,word,3C013F40
+patch=1,EE,20110708,word,44810000
+patch=1,EE,20110710,word,4600C602
+patch=1,EE,2016E758,word,3C02452A
+patch=1,EE,2016E75C,word,34439555
+patch=1,EE,2016EAFC,word,3C02452A
+patch=1,EE,2016EB00,word,34439555
+patch=1,EE,2016F65C,word,3C02452A
+patch=1,EE,2016F660,word,34439555
+patch=1,EE,2016F850,word,3C02452A
+patch=1,EE,2016F858,word,34429555
+patch=1,EE,2016F9F4,word,3C03452A
+patch=1,EE,2016F9FC,word,34639555
+patch=1,EE,2016D8D4,word,3C0243AA
+patch=1,EE,2017308C,word,3C0243AA
+patch=1,EE,20182DD0,word,3C0243AA
+patch=1,EE,201C1730,word,3C0243AA
+patch=1,EE,201D7B44,word,3C0243AA
+patch=1,EE,202086F8,word,3C0243AA
+
+// HUD(2D) 16:9 보정: 화면 중앙 기준 가로 0.75배
+patch=1,EE,201D8BC4,word,3C023F10
+patch=1,EE,201D92BC,word,3C193F10
+patch=1,EE,201D99F0,word,3C033F10
+patch=1,EE,201DA184,word,3C033F10
+patch=1,EE,201DA54C,word,3C033F10
+patch=1,EE,201DA91C,word,3C033F10
+patch=1,EE,201DAB44,word,3C023F10
+patch=1,EE,201D8D48,word,26637700
+patch=1,EE,201D8DD0,word,26637700
+patch=1,EE,201D95A4,word,26A37700
+patch=1,EE,201D9618,word,26A47700
+patch=1,EE,201DACCC,word,26647700
+patch=1,EE,201DAD44,word,26647700
+patch=1,EE,201D99F8,word,3C0346EE
+patch=1,EE,201DA18C,word,3C0346EE
+patch=1,EE,201DA554,word,3C0346EE
+patch=1,EE,201DA924,word,3C0346EE
